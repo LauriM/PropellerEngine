@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>Tegra_gfx_debugger</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(NVPACK_ROOT)\Tegra_Graphics_Debugger\target\android-kk-egl-t124-a32\static\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <AntBuild>
+      <NativeLibDirectories>$(NVPACK_ROOT)\Tegra_Graphics_Debugger\target\android-kk-egl-t124-a32;%(NativeLibDirectories)</NativeLibDirectories>
+    </AntBuild>
+    <AntBuild>
+      <NativeLibDependencies>libEGL_tgd.so;libGLESv2_tgd.so;libTegra_gfx_debugger.so;libNvPmApi.Core.so;%(NativeLibDependencies)</NativeLibDependencies>
+    </AntBuild>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

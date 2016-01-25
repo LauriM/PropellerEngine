@@ -1,0 +1,12 @@
+[
+   [
+      [ "TransformComponent", null ],
+      [
+         "SpriteComponent",
+         [
+            [ "Texture", 5, "propelli.png" ]
+         ]
+      ],
+      [ "Box2DRigidBodyComponent", null ]
+   ]
+]

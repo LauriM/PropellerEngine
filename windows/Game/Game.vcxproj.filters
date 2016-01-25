@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\player">
+      <UniqueIdentifier>{29e8f0e2-f954-419e-b93f-078c6f48b294}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Pickup">
+      <UniqueIdentifier>{9348c561-e3f7-4a47-89f4-38d1128e540b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Documentation">
+      <UniqueIdentifier>{7c201b4e-e0cc-4d38-8bb3-cc4250f57871}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Documentation\CodeSamples">
+      <UniqueIdentifier>{bd63fbbe-3c26-42cb-8450-9c958a407148}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{0a2cb21e-a40d-424b-ad83-97407805d105}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\game\player\PlayerInputComponent.cpp">
+      <Filter>Source Files\player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\DummyGameInstance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\DummyGameMode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\precompiledGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\DummyScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\PhysicsTestScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\pickup\PickupComponent.cpp">
+      <Filter>Source Files\Pickup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game\player\PlayerInputSystem.cpp">
+      <Filter>Source Files\player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\doc\ExampleCode\PlayerInputComponent.cpp">
+      <Filter>Documentation\CodeSamples</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\doc\ExampleCode\PlayerInputSystem.cpp">
+      <Filter>Documentation\CodeSamples</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\doc\ExampleCode\TransformComponent.cpp">
+      <Filter>Documentation\CodeSamples</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\doc\ExampleCode\ExampleScene.cpp">
+      <Filter>Documentation\CodeSamples</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\game\precompiled.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\player\PlayerInputComponent.h">
+      <Filter>Source Files\player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\DummyGameInstance.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\DummyGameMode.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\Propeller.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\DummyScene.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\GameContext.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\PhysicsTestScene.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\pickup\PickupComponent.h">
+      <Filter>Source Files\Pickup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game\player\PlayerInputSystem.h">
+      <Filter>Source Files\player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\doc\ExampleCode\ExampleScene.h">
+      <Filter>Documentation\CodeSamples</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\doc\ExampleCode\PlayerInputComponent.h">
+      <Filter>Documentation\CodeSamples</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\doc\ExampleCode\PlayerInputSystem.h">
+      <Filter>Documentation\CodeSamples</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\doc\ExampleCode\TransformComponent.h">
+      <Filter>Documentation\CodeSamples</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\doc\PropellerGuide.md">
+      <Filter>Documentation</Filter>
+    </None>
+    <None Include="..\..\bin\autoexec.cfg">
+      <Filter>Resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\doc\START_HERE.txt">
+      <Filter>Documentation</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

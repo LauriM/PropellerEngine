@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(IncludePath);$(SolutionDir)/../android/NativePropeller/native_app_glue/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_ANDROID;OS_ANDROID;RENDERING_ENABLED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <GccExceptionHandling>true</GccExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <AdditionalOptions>-fno-permissive %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>android;EGL;GLESv2;log;Engine;Game;JsonCpp;lodepng;xxhash;Bullet;Box2D</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)build/$(Configuration)/;$(LibraryPath);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <AntBuild>
+      <AssetsDirectories>$(SolutionDir)\..\data;%(AssetsDirectories)</AssetsDirectories>
+    </AntBuild>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

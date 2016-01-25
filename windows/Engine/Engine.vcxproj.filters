@@ -1,0 +1,825 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Console">
+      <UniqueIdentifier>{a7ac0757-2a10-4de5-b4db-f97a09f6846c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Debug">
+      <UniqueIdentifier>{5121e7bf-7afe-4a57-ba83-631968d76cd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\File">
+      <UniqueIdentifier>{9b3632ac-812a-4375-bb51-726c1d57c50d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Input">
+      <UniqueIdentifier>{a0ce978f-4c1e-4897-95fd-1baebf6010d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lang">
+      <UniqueIdentifier>{54f8bfe0-5073-47ca-bdac-0e6c1e64b301}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Math">
+      <UniqueIdentifier>{c1e98f37-30a6-4a47-a701-9ad99e82b728}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Preprocessor">
+      <UniqueIdentifier>{65b6d677-e294-410c-ac9b-8671b15b671d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Properties">
+      <UniqueIdentifier>{a1bfe7d0-c1a1-4195-a973-b9f51ad5ef52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Renderer">
+      <UniqueIdentifier>{bfe8571c-05fd-4f17-a3b3-e48a5f3dba44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Resource">
+      <UniqueIdentifier>{f8ff7c6d-bc6e-4179-b5eb-dc2e35a733e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene">
+      <UniqueIdentifier>{95dabb99-dec0-4ae3-a1fc-791827ded01b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Stream">
+      <UniqueIdentifier>{4b864185-b033-4a9f-b226-19c9b0191e10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sys">
+      <UniqueIdentifier>{24672bce-7d05-44c1-8b80-cfa5b2cad7ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Util">
+      <UniqueIdentifier>{f7b42a81-facc-46c4-aaad-771e6bcba0cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Component">
+      <UniqueIdentifier>{43d9b300-8f04-46b3-82f9-e188a21f1c9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RTTI">
+      <UniqueIdentifier>{09d2afd9-9b71-4e9d-bb5e-23ebc18126bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Profiler">
+      <UniqueIdentifier>{8a6c8661-c5ed-4441-8ab9-eda3d83e6352}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\SceneTypes">
+      <UniqueIdentifier>{37b8d790-48a3-48b2-bbdf-524669dbb8fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Audio">
+      <UniqueIdentifier>{f720c56b-5da3-4d0d-a11e-62003fa05482}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Audio\XAudio2">
+      <UniqueIdentifier>{81b03a3c-75b2-4222-9569-1a4b6e6a360d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Physics">
+      <UniqueIdentifier>{fda7f6a3-506c-47d1-b0b0-32118822ac1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Renderer\D3D11">
+      <UniqueIdentifier>{9a728369-ac84-470d-9bcf-bd31bf33e047}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Network">
+      <UniqueIdentifier>{46c67b3d-23e8-4094-bcdf-0c939151f999}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Renderer\NullRenderer">
+      <UniqueIdentifier>{9ba0c808-a1f4-4ddd-9fd2-e9dbc702116a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Memory">
+      <UniqueIdentifier>{761c77ca-e8e9-4cb3-bac2-458411fb16a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Renderer\GL2">
+      <UniqueIdentifier>{a582d78e-a867-4312-8334-8aa8ce4ee300}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\engine\precompiled.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\file\Archive.h">
+      <Filter>Source Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\stream\BufferedOutputStream.h">
+      <Filter>Source Files\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\stream\CallWithStream.h">
+      <Filter>Source Files\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\scene\CameraComponent.h">
+      <Filter>Source Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\console\Command.h">
+      <Filter>Source Files\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\component\ComponentHolder.h">
+      <Filter>Source Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\debug\Debug.h">
+      <Filter>Source Files\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\console\Console.h">
+      <Filter>Source Files\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\console\Cvar.h">
+      <Filter>Source Files\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\file\DirectoryArchive.h">
+      <Filter>Source Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\stream\Endian.h">
+      <Filter>Source Files\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\scene\Entity.h">
+      <Filter>Source Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\file\FileData.h">
+      <Filter>Source Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\sys\FileSystem.h">
+      <Filter>Source Files\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\file\FileManager.h">
+      <Filter>Source Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\lang\HandleManager.h">
+      <Filter>Source Files\Lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\lang\Handle.h">
+      <Filter>Source Files\Lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\stream\InputStream.h">
+      <Filter>Source Files\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\sys\Logger.h">
+      <Filter>Source Files\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\math\Matrix.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\sys\MemoryMappedFile.h">
+      <Filter>Source Files\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\stream\OutputStream.h">
+      <Filter>Source Files\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\preprocessor\platform.h">
+      <Filter>Source Files\Preprocessor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\properties\Properties.h">
+      <Filter>Source Files\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\lang\ReferenceCountedPointer.h">
+      <Filter>Source Files\Lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\lang\ReferenceCountable.h">
+      <Filter>Source Files\Lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\resource\ResourceLoader.h">
+      <Filter>Source Files\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\resource\ResourceManager.h">
+      <Filter>Source Files\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\stream\Serializable.h">
+      <Filter>Source Files\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\scene\TransformComponent.h">
+      <Filter>Source Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\math\Vector.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\util\StringUtil.h">
+      <Filter>Source Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\rtti\Object.h">
+      <Filter>Source Files\RTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\rtti\Class.h">
+      <Filter>Source Files\RTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\rtti\RTTI.h">
+      <Filter>Source Files\RTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\preprocessor\version.h">
+      <Filter>Source Files\Preprocessor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\preprocessor\shared.h">
+      <Filter>Source Files\Preprocessor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\scene\EntityType.h">
+      <Filter>Source Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\scene\EntityTypeManager.h">
+      <Filter>Source Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\util\Array.h">
+      <Filter>Source Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\util\Queue.h">
+      <Filter>Source Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\scene\ComponentType.h">
+      <Filter>Source Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\util\Stack.h">
+      <Filter>Source Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\preprocessor\forwarddeclare.h">
+      <Filter>Source Files\Preprocessor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\component\Component.h">
+      <Filter>Source Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\resource\Resource.h">
+      <Filter>Source Files\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\stream\CSharpInputStream.h">
+      <Filter>Source Files\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\stream\CSharpBufferedOutputStream.h">
+      <Filter>Source Files\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\component\Dependencies.h">
+      <Filter>Source Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\scene\Scene.h">
+      <Filter>Source Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\sys\GameWindow.h">
+      <Filter>Source Files\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\input\InputSystem.h">
+      <Filter>Source Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\input\KeyCodes.h">
+      <Filter>Source Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\input\XInputSystem.h">
+      <Filter>Source Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\file\PackageArchive.h">
+      <Filter>Source Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\file\FileList.h">
+      <Filter>Source Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\file\PropellerPackageVersion.h">
+      <Filter>Source Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\GameInstance.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\GameMode.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\util\Bind.h">
+      <Filter>Source Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\SystemBase.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\SystemManager.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\math\Random.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\preprocessor\macros.h">
+      <Filter>Source Files\Preprocessor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\file\AndroidAssetManagerArchive.h">
+      <Filter>Source Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\profiler\ProfilerManager.h">
+      <Filter>Source Files\Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\profiler\AutoProfiler.h">
+      <Filter>Source Files\Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\math\Quaternion.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\math\Constants.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\input\RawInputSystem.h">
+      <Filter>Source Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\lang\RCCPP.h">
+      <Filter>Source Files\Lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\debug\Tombstone.h">
+      <Filter>Source Files\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\input\AndroidInputSystem.h">
+      <Filter>Source Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\scene\scenetypes\EditorSceneType.h">
+      <Filter>Source Files\Scene\SceneTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\scene\scenetypes\ProgrammableSceneType.h">
+      <Filter>Source Files\Scene\SceneTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\scene\SceneManager.h">
+      <Filter>Source Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\scene\scenetypes\AbstractSceneType.h">
+      <Filter>Source Files\Scene\SceneTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\util\HashMap.h">
+      <Filter>Source Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\lang\ScopedPtr.h">
+      <Filter>Source Files\Lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\Context.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\sys\DateTime.h">
+      <Filter>Source Files\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\console\IngameConsoleSystem.h">
+      <Filter>Source Files\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\console\IngameLogger.h">
+      <Filter>Source Files\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\audio\AudioSystem.h">
+      <Filter>Source Files\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\audio\AudioDeviceBase.h">
+      <Filter>Source Files\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\audio\XAudio2\XAudio2Device.h">
+      <Filter>Source Files\Audio\XAudio2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\audio\AudioDevice.h">
+      <Filter>Source Files\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\audio\AudioType.h">
+      <Filter>Source Files\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\physics\PhysicSystem.h">
+      <Filter>Source Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\physics\RigidBodyComponent.h">
+      <Filter>Source Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\physics\BulletDebugDraw.h">
+      <Filter>Source Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\math\VectorConversions.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\physics\Box2DPhysicSystem.h">
+      <Filter>Source Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\physics\Box2DRigidBodyComponent.h">
+      <Filter>Source Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\physics\BoxContactListener.h">
+      <Filter>Source Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\sys\Timer.h">
+      <Filter>Source Files\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\PlatformInitialization.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\physics\Box2DCharacterComponent.h">
+      <Filter>Source Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\RendererDevice.h">
+      <Filter>Source Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\RendererSystem.h">
+      <Filter>Source Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\RendererBackend.h">
+      <Filter>Source Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\Pipeline.h">
+      <Filter>Source Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\StateDescriptor.h">
+      <Filter>Source Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\Shader.h">
+      <Filter>Source Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\RendererEnums.h">
+      <Filter>Source Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\D3D11\D3D11Shader.h">
+      <Filter>Source Files\Renderer\D3D11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\ShaderLoader.h">
+      <Filter>Source Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\ShaderResource.h">
+      <Filter>Source Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\DrawDescriptor.h">
+      <Filter>Source Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\RenderTarget.h">
+      <Filter>Source Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\D3D11\D3D11RenderTarget.h">
+      <Filter>Source Files\Renderer\D3D11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\Buffer.h">
+      <Filter>Source Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\D3D11\D3D11Buffer.h">
+      <Filter>Source Files\Renderer\D3D11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\InputLayout.h">
+      <Filter>Source Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\D3D11\D3D11InputLayout.h">
+      <Filter>Source Files\Renderer\D3D11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\SpriteComponent.h">
+      <Filter>Source Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\TextureResource.h">
+      <Filter>Source Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\TextureLoader.h">
+      <Filter>Source Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\Texture.h">
+      <Filter>Source Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\D3D11\D3D11DeviceData.h">
+      <Filter>Source Files\Renderer\D3D11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\ModelResource.h">
+      <Filter>Source Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\PropellerModelLoader.h">
+      <Filter>Source Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\PropellerModelVersionIdentifier.h">
+      <Filter>Source Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\MeshComponent.h">
+      <Filter>Source Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\sys\Thread.h">
+      <Filter>Source Files\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\sys\Mutex.h">
+      <Filter>Source Files\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\sys\Scheduler.h">
+      <Filter>Source Files\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\sys\Sleep.h">
+      <Filter>Source Files\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\Viewport.h">
+      <Filter>Source Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\CameraSystem.h">
+      <Filter>Source Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\LightComponent.h">
+      <Filter>Source Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\sys\Atomic.h">
+      <Filter>Source Files\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\sys\Socket.h">
+      <Filter>Source Files\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\network\ServerSystem.h">
+      <Filter>Source Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\SpriteLayerDefinition.h">
+      <Filter>Source Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\network\ClientSystem.h">
+      <Filter>Source Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\memory\BlockPoolAllocator.h">
+      <Filter>Source Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\memory\StackAllocator.h">
+      <Filter>Source Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\network\SharedEnums.h">
+      <Filter>Source Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\GL2\GL2DeviceData.h">
+      <Filter>Source Files\Renderer\GL2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\D3D11\D3D11Pipeline.h">
+      <Filter>Source Files\Renderer\D3D11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\GL2\GL2Shader.h">
+      <Filter>Source Files\Renderer\GL2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\GL2\GL2Helper.h">
+      <Filter>Source Files\Renderer\GL2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\GL2\GL2InputLayout.h">
+      <Filter>Source Files\Renderer\GL2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\GL2\GL2Texture.h">
+      <Filter>Source Files\Renderer\GL2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\GL2\GL2Pipeline.h">
+      <Filter>Source Files\Renderer\GL2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\memory\RingBuffer.h">
+      <Filter>Source Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\GL2\GL2Buffer.h">
+      <Filter>Source Files\Renderer\GL2</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\engine\precompiled.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\scene\CameraComponent.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\component\ComponentHolder.cpp">
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\debug\DebugWin32.cpp">
+      <Filter>Source Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\console\Console.cpp">
+      <Filter>Source Files\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\file\DirectoryArchive.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\scene\Entity.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\sys\FileSystemWin32.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\file\FileManager.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\lang\Handle.cpp">
+      <Filter>Source Files\Lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\lang\HandleManager.cpp">
+      <Filter>Source Files\Lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\sys\Logger.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\sys\MemoryMappedFileWin32.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\resource\ResourceManager.cpp">
+      <Filter>Source Files\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\stream\Serializable.cpp">
+      <Filter>Source Files\Stream</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\scene\TransformComponent.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\util\StringUtil.cpp">
+      <Filter>Source Files\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\rtti\Class.cpp">
+      <Filter>Source Files\RTTI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\rtti\RTTI.cpp">
+      <Filter>Source Files\RTTI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\scene\EntityType.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\scene\EntityTypeManager.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\rtti\Object.cpp">
+      <Filter>Source Files\RTTI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\component\Component.cpp">
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\scene\Scene.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\sys\GameWindowWin32.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\input\InputSystem.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\input\XInputSystem.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\file\PackageArchive.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\GameInstance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\input\KeyCodes.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\SystemBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\SystemManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\math\Random.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\file\AndroidAssetManagerArchive.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\profiler\ProfilerManager.cpp">
+      <Filter>Source Files\Profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\sys\MemoryMappedFileAndroid.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\input\RawInputSystemWin32.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\input\AndroidInputSystem.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\sys\FileSystemUnix.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\sys\MemoryMappedFileUnix.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\scene\scenetypes\EditorSceneType.cpp">
+      <Filter>Source Files\Scene\SceneTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\scene\SceneManager.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\sys\DateTime.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\console\IngameConsoleSystem.cpp">
+      <Filter>Source Files\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\console\IngameLogger.cpp">
+      <Filter>Source Files\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\audio\AudioSystem.cpp">
+      <Filter>Source Files\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\audio\XAudio2\XAudio2Device.cpp">
+      <Filter>Source Files\Audio\XAudio2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\physics\PhysicSystem.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\physics\RigidBodyComponent.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\physics\BulletDebugDraw.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\physics\Box2DPhysicSystem.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\physics\Box2DRigidBodyComponent.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\physics\BoxContactListener.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\sys\TimerWin32.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\sys\TimerUnix.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\PlatformInitializationEmpty.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\physics\Box2DCharacterComponent.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\renderer\D3D11\D3D11RendererDevice.cpp">
+      <Filter>Source Files\Renderer\D3D11</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\renderer\RendererSystem.cpp">
+      <Filter>Source Files\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\renderer\D3D11\D3D11ShaderLoader.cpp">
+      <Filter>Source Files\Renderer\D3D11</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\renderer\SpriteComponent.cpp">
+      <Filter>Source Files\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\renderer\TextureResource.cpp">
+      <Filter>Source Files\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\renderer\D3D11\D3D11Texture.h">
+      <Filter>Source Files\Renderer\D3D11</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\renderer\D3D11\D3D11TextureLoader.cpp">
+      <Filter>Source Files\Renderer\D3D11</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\renderer\ModelResource.cpp">
+      <Filter>Source Files\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\renderer\PropellerModelLoader.cpp">
+      <Filter>Source Files\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\renderer\MeshComponent.cpp">
+      <Filter>Source Files\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\sys\ThreadWin32.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\sys\MutexWin32.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\sys\Scheduler.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\sys\SleepWin32.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\renderer\CameraSystem.cpp">
+      <Filter>Source Files\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\renderer\LightComponent.cpp">
+      <Filter>Source Files\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\sys\AtomicWin32.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\sys\SocketWin32.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\network\ServerSystem.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\network\ClientSystem.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\renderer\nullrenderer\NullRendererTextureLoader.cpp">
+      <Filter>Source Files\Renderer\NullRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\memory\BlockPoolAllocator.cpp">
+      <Filter>Source Files\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\renderer\GL2\GL2RendererDevice.cpp">
+      <Filter>Source Files\Renderer\GL2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\renderer\GL2\GL2TextureLoader.cpp">
+      <Filter>Source Files\Renderer\GL2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\renderer\GL2\GL2ShaderLoader.cpp">
+      <Filter>Source Files\Renderer\GL2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\sys\SleepUnix.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\sys\SocketUnix.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\sys\ThreadUnix.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\sys\MutexUnix.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\sys\AtomicUnix.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\bin\autoexec.cfg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\bin\keys.cfg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\doc\PropellerGuide.md">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\README.md">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\bin\editor.cfg">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\changelog.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

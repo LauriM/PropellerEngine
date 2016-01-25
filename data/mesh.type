@@ -1,0 +1,18 @@
+[
+   [
+      [ "TransformComponent",
+		[
+			[ "Scale", 3, 1 ]
+		]
+	  ],
+	  
+	  [
+         "MeshComponent",
+         [
+            [ "ModelName", 5, "test.PropellerModel" ],
+			[ "Texture", 5, "taloTexture.png" ]
+         ]
+      ]
+	  
+   ]
+]

@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\CSharp">
+      <UniqueIdentifier>{ad0eb9f1-1b9c-4186-a258-9fad63de8e36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sys">
+      <UniqueIdentifier>{b9100e66-4965-4893-b377-dffd2806b79a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\EditorOperations">
+      <UniqueIdentifier>{8158640d-cd4e-4656-a0fd-bb52358728e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\EntityEditor">
+      <UniqueIdentifier>{b1ef81d5-9b65-449a-af7b-fefcf0105bc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\StatsView">
+      <UniqueIdentifier>{0d76d85c-2025-48c0-bb7c-c795f1c9ebbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ParticleEditor">
+      <UniqueIdentifier>{ed7bc56d-840b-4063-981a-89016d624fa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SystemListView">
+      <UniqueIdentifier>{33b440cf-cac9-4d59-971f-278c33158ad4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ModelImporter">
+      <UniqueIdentifier>{5cc3ab2c-671c-4dfe-b698-ab741d4d9028}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ModelImporter\Importers">
+      <UniqueIdentifier>{46761dcb-7807-4b1d-8c2d-60b76535b8f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ModelViewer">
+      <UniqueIdentifier>{609f9a90-1686-491b-96a2-85430dd144a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TiledImport">
+      <UniqueIdentifier>{e1bd0121-2833-41d3-b10f-21f4f8c8d3a5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\editorbackend\dll.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\editorbackend\GameEditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\editorbackend\precompiled.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\editorbackend\CSharp\CSharpInstanceManager.cpp">
+      <Filter>Source Files\CSharp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\editorbackend\CSharp\CSharpInstance.cpp">
+      <Filter>Source Files\CSharp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\editorbackend\sys\EditorLogger.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\editorbackend\OperationManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\editorbackend\editoroperations\addRemoveEntityOperation.cpp">
+      <Filter>Source Files\EditorOperations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\editorbackend\entityeditor\EntityEditor.cpp">
+      <Filter>Source Files\EntityEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\editorbackend\entityeditor\EntityEditView.cpp">
+      <Filter>Source Files\EntityEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\editorbackend\editoroperations\addRemoveComponentOperation.cpp">
+      <Filter>Source Files\EditorOperations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\editorbackend\editoroperations\addRemoveComponentOnTypeOperation.cpp">
+      <Filter>Source Files\EditorOperations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\editorbackend\statsview\StatsView.cpp">
+      <Filter>Source Files\StatsView</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\editorbackend\editoroperations\renameEntityOperation.cpp">
+      <Filter>Source Files\EditorOperations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\editorbackend\ArchiveCreator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\editorbackend\particleeditor\ParticleEditor.cpp">
+      <Filter>Source Files\ParticleEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\editorbackend\systemlistview\SystemListView.cpp">
+      <Filter>Source Files\SystemListView</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\editorbackend\modelimporter\ModelImporterInstance.cpp">
+      <Filter>Source Files\ModelImporter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\editorbackend\modelimporter\importers\WaveformObjImporter.cpp">
+      <Filter>Source Files\ModelImporter\Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\editorbackend\editoroperations\addEmptyEntityOperation.cpp">
+      <Filter>Source Files\EditorOperations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\editorbackend\modelviewer\ModelViewer.cpp">
+      <Filter>Source Files\ModelViewer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\editorbackend\tiledimport\TiledImporter.cpp">
+      <Filter>Source Files\TiledImport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\editorbackend\EditorVisualizationSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\editorbackend\GameView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\editorbackend\GameEditor.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\editorbackend\precompiled.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\editorbackend\CSharp\CSharpInstance.h">
+      <Filter>Source Files\CSharp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\editorbackend\CSharp\CSharpInstanceManager.h">
+      <Filter>Source Files\CSharp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\editorbackend\CSharp\CSharpInstanceType.h">
+      <Filter>Source Files\CSharp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\editorbackend\CSharp\StreamInstructionTypes.h">
+      <Filter>Source Files\CSharp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\editorbackend\sys\EditorLogger.h">
+      <Filter>Source Files\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\editorbackend\OperationManager.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\editorbackend\Operation.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\editorbackend\editoroperations\addRemoveEntityOperation.h">
+      <Filter>Source Files\EditorOperations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\editorbackend\entityeditor\EntityEditor.h">
+      <Filter>Source Files\EntityEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\editorbackend\EntityEditView.h">
+      <Filter>Source Files\EntityEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\editorbackend\editoroperations\addRemoveComponentOperation.h">
+      <Filter>Source Files\EditorOperations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\editorbackend\entityeditor\EntityEditTargetType.h">
+      <Filter>Source Files\EntityEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\editorbackend\editoroperations\addRemoveComponentOnTypeOperation.h">
+      <Filter>Source Files\EditorOperations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\editorbackend\statsview\StatsView.h">
+      <Filter>Source Files\StatsView</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\editorbackend\editoroperations\renameEntityOperation.h">
+      <Filter>Source Files\EditorOperations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\editorbackend\ArchiveCreator.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\editorbackend\particleeditor\ParticleEditor.h">
+      <Filter>Source Files\ParticleEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\editorbackend\systemlistview\SystemListView.h">
+      <Filter>Source Files\SystemListView</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\editorbackend\modelimporter\ModelImporterInstance.h">
+      <Filter>Source Files\ModelImporter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\editorbackend\modelimporter\AbstractModelImporter.h">
+      <Filter>Source Files\ModelImporter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\editorbackend\modelimporter\importers\WaveformObjImporter.h">
+      <Filter>Source Files\ModelImporter\Importers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\editorbackend\editoroperations\addEmptyEntityOperation.h">
+      <Filter>Source Files\EditorOperations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\editorbackend\modelviewer\ModelViewer.h">
+      <Filter>Source Files\ModelViewer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\editorbackend\tiledimport\TiledImporter.h">
+      <Filter>Source Files\TiledImport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\editorbackend\EditorVisualizationSystem.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\editorbackend\GameView.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,18 @@
+language: cpp
+compiler: clang++
+script: make
+notifications:
+    email:
+        on_success: change
+        on_failure: change
+
+before_install:
+- cd linux
+
+after_success:
+- cd ../bin
+- ../linux/standalone
+- cat engine.log
+- ../linux/tests
+
+

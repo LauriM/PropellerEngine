@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="NsightTegraProject">
+    <NsightTegraProjectRevisionNumber>11</NsightTegraProjectRevisionNumber>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="GameDebug|Tegra-Android">
+      <Configuration>GameDebug</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GameDevelopment|Tegra-Android">
+      <Configuration>GameDevelopment</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GameRelease|Tegra-Android">
+      <Configuration>GameRelease</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8B4C4780-0D51-4F95-991F-F5CFD7D5D7A5}</ProjectGuid>
+    <RootNamespace>NativePropeller</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GameDebug|Tegra-Android'" Label="Configuration">
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+    <AndroidArch>armv7-a</AndroidArch>
+    <AndroidNativeAPI>UseTarget</AndroidNativeAPI>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GameRelease|Tegra-Android'" Label="Configuration">
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+    <AndroidArch>armv7-a</AndroidArch>
+    <AndroidNativeAPI>UseTarget</AndroidNativeAPI>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GameDevelopment|Tegra-Android'" Label="Configuration">
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+    <AndroidArch>armv7-a</AndroidArch>
+    <AndroidNativeAPI>UseTarget</AndroidNativeAPI>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='GameDebug|Tegra-Android'">
+    <Import Project="..\..\windows\Boost.props" />
+    <Import Project="..\..\windows\GLES2.props" />
+    <Import Project="..\..\windows\LodePNG.props" />
+    <Import Project="..\..\windows\PropellerEngine.props" />
+    <Import Project="..\..\windows\JsonCpp.props" />
+    <Import Project="..\..\windows\Game.props" />
+    <Import Project="..\..\windows\XXHash.props" />
+    <Import Project="..\..\windows\stb.props" />
+    <Import Project="..\..\windows\Bullet.props" />
+    <Import Project="..\..\windows\Box2D.props" />
+    <Import Project="..\..\windows\AndroidTegra.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='GameDevelopment|Tegra-Android'">
+    <Import Project="..\..\windows\Boost.props" />
+    <Import Project="..\..\windows\GLES2.props" />
+    <Import Project="..\..\windows\LodePNG.props" />
+    <Import Project="..\..\windows\PropellerEngine.props" />
+    <Import Project="..\..\windows\JsonCpp.props" />
+    <Import Project="..\..\windows\Game.props" />
+    <Import Project="..\..\windows\XXHash.props" />
+    <Import Project="..\..\windows\stb.props" />
+    <Import Project="..\..\windows\Bullet.props" />
+    <Import Project="..\..\windows\Box2D.props" />
+    <Import Project="..\..\windows\AndroidTegra.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='GameRelease|Tegra-Android'">
+    <Import Project="..\..\windows\Boost.props" />
+    <Import Project="..\..\windows\GLES2.props" />
+    <Import Project="..\..\windows\LodePNG.props" />
+    <Import Project="..\..\windows\PropellerEngine.props" />
+    <Import Project="..\..\windows\JsonCpp.props" />
+    <Import Project="..\..\windows\Game.props" />
+    <Import Project="..\..\windows\XXHash.props" />
+    <Import Project="..\..\windows\stb.props" />
+    <Import Project="..\..\windows\Bullet.props" />
+    <Import Project="..\..\windows\Box2D.props" />
+    <Import Project="..\..\windows\AndroidTegra.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GameRelease|Tegra-Android'">
+    <FastDeploy>false</FastDeploy>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GameDebug|Tegra-Android'">
+    <FastDeploy>false</FastDeploy>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GameDevelopment|Tegra-Android'">
+    <FastDeploy>false</FastDeploy>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GameDebug|Tegra-Android'">
+    <ClCompile>
+      <CppLanguageStandard>gnu++11</CppLanguageStandard>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <AntBuild>
+      <AssetsDirectories>%(AssetsDirectories)</AssetsDirectories>
+      <NativeLibDirectories>%(NativeLibDirectories)</NativeLibDirectories>
+      <NativeLibDependencies>%(NativeLibDependencies)</NativeLibDependencies>
+    </AntBuild>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GameRelease|Tegra-Android'">
+    <ClCompile>
+      <CppLanguageStandard>gnu++11</CppLanguageStandard>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <AntBuild>
+      <AssetsDirectories>%(AssetsDirectories)</AssetsDirectories>
+      <NativeLibDirectories>%(NativeLibDirectories)</NativeLibDirectories>
+      <NativeLibDependencies>%(NativeLibDependencies)</NativeLibDependencies>
+    </AntBuild>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GameDevelopment|Tegra-Android'">
+    <ClCompile>
+      <CppLanguageStandard>gnu++11</CppLanguageStandard>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <AntBuild>
+      <AssetsDirectories>%(AssetsDirectories)</AssetsDirectories>
+      <NativeLibDirectories>%(NativeLibDirectories)</NativeLibDirectories>
+      <NativeLibDependencies>%(NativeLibDependencies)</NativeLibDependencies>
+    </AntBuild>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <AndroidBuild Include="AndroidManifest.xml" />
+    <AndroidBuild Include="res\values\strings.xml">
+      <SubType>Designer</SubType>
+    </AndroidBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="jni\AndroidLogger.cpp" />
+    <ClCompile Include="jni\main.cpp" />
+    <ClCompile Include="native_app_glue\android_native_app_glue.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="jni\AndroidLogger.h" />
+    <ClInclude Include="native_app_glue\android_native_app_glue.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

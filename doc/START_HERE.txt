@@ -1,0 +1,9 @@
+PropellerGuide.md has all the important info on getting started with the engine.
+
+If some information is missing, its better to ask the engine developer than do something the wrong way.
+
+./doc/ExampleCode/ directory has examples on basic functionality of the engine.
+
+"Game" project should have some old project, you can also look into that code and start from there.
+
+If you view PropellerGuide.md from your Github repo, it will display the document with better formatting.

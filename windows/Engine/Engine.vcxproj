@@ -1,0 +1,1014 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="EditorDebug|Emscripten">
+      <Configuration>EditorDebug</Configuration>
+      <Platform>Emscripten</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="EditorDebug|Win32">
+      <Configuration>EditorDebug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="EditorDevelopment|Emscripten">
+      <Configuration>EditorDevelopment</Configuration>
+      <Platform>Emscripten</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="EditorDevelopment|Win32">
+      <Configuration>EditorDevelopment</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GameDebugGL2|Tegra-Android">
+      <Configuration>GameDebugGL2</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GameDebugGL2|Win32">
+      <Configuration>GameDebugGL2</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GameDebug|Emscripten">
+      <Configuration>GameDebug</Configuration>
+      <Platform>Emscripten</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GameDebug|Tegra-Android">
+      <Configuration>GameDebug</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GameDebug|Win32">
+      <Configuration>GameDebug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GameDevelopment|Emscripten">
+      <Configuration>GameDevelopment</Configuration>
+      <Platform>Emscripten</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GameDevelopment|Tegra-Android">
+      <Configuration>GameDevelopment</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GameDevelopment|Win32">
+      <Configuration>GameDevelopment</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GameRelease|Emscripten">
+      <Configuration>GameRelease</Configuration>
+      <Platform>Emscripten</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GameRelease|Tegra-Android">
+      <Configuration>GameRelease</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GameRelease|Win32">
+      <Configuration>GameRelease</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ServerDebug|Tegra-Android">
+      <Configuration>ServerDebug</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ServerDebug|Win32">
+      <Configuration>ServerDebug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{59E5DE67-3281-4B91-AAC6-4E228D823329}</ProjectGuid>
+    <RootNamespace>Engine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GameDebug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GameDebug|Tegra-Android'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>arm-linux-androideabi-4.8</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GameDebugGL2|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GameDebugGL2|Tegra-Android'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>arm-linux-androideabi-4.8</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ServerDebug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ServerDebug|Tegra-Android'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>arm-linux-androideabi-4.8</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ServerDebug|Tegra-Android'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='EditorDebug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GameDebug|Emscripten'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>emcc</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GameDebugGL2|Emscripten'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>emcc</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ServerDebug|Emscripten'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>emcc</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='EditorDebug|Emscripten'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>emcc</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GameRelease|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GameRelease|Tegra-Android'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>arm-linux-androideabi-4.8</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GameRelease|Emscripten'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>emcc</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GameDevelopment|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GameDevelopment|Tegra-Android'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>arm-linux-androideabi-4.8</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='EditorDevelopment|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GameDevelopment|Emscripten'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>emcc</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='EditorDevelopment|Emscripten'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>emcc</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='GameDebug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\BuildConfigurations.props" />
+    <Import Project="..\JsonCpp.props" />
+    <Import Project="..\PropellerEngine.props" />
+    <Import Project="..\Boost.props" />
+    <Import Project="..\D3D11.props" />
+    <Import Project="..\DirectXTK-debug.props" />
+    <Import Project="..\ConfDebug.props" />
+    <Import Project="..\XXHash.props" />
+    <Import Project="..\stb.props" />
+    <Import Project="..\Bullet.props" />
+    <Import Project="..\Box2D.props" />
+    <Import Project="..\WinSock.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='GameDebug|Tegra-Android'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\BuildConfigurations.props" />
+    <Import Project="..\JsonCpp.props" />
+    <Import Project="..\PropellerEngine.props" />
+    <Import Project="..\Boost.props" />
+    <Import Project="..\DirectXTK-debug.props" />
+    <Import Project="..\ConfDebug.props" />
+    <Import Project="..\XXHash.props" />
+    <Import Project="..\stb.props" />
+    <Import Project="..\Bullet.props" />
+    <Import Project="..\Box2D.props" />
+    <Import Project="..\WinSock.props" />
+    <Import Project="..\AndroidTegra.props" />
+    <Import Project="..\GL2.props" />
+    <Import Project="..\LodePNG.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='GameDebugGL2|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\BuildConfigurations.props" />
+    <Import Project="..\JsonCpp.props" />
+    <Import Project="..\PropellerEngine.props" />
+    <Import Project="..\Boost.props" />
+    <Import Project="..\ConfDebug.props" />
+    <Import Project="..\XXHash.props" />
+    <Import Project="..\stb.props" />
+    <Import Project="..\Bullet.props" />
+    <Import Project="..\Box2D.props" />
+    <Import Project="..\WinSock.props" />
+    <Import Project="..\GL2.props" />
+    <Import Project="..\LodePNG.props" />
+    <Import Project="..\Glew.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='GameDebugGL2|Tegra-Android'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\BuildConfigurations.props" />
+    <Import Project="..\JsonCpp.props" />
+    <Import Project="..\PropellerEngine.props" />
+    <Import Project="..\Boost.props" />
+    <Import Project="..\ConfDebug.props" />
+    <Import Project="..\XXHash.props" />
+    <Import Project="..\stb.props" />
+    <Import Project="..\Bullet.props" />
+    <Import Project="..\Box2D.props" />
+    <Import Project="..\WinSock.props" />
+    <Import Project="..\GL2.props" />
+    <Import Project="..\LodePNG.props" />
+    <Import Project="..\Glew.props" />
+    <Import Project="..\AndroidTegra.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ServerDebug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\BuildConfigurations.props" />
+    <Import Project="..\JsonCpp.props" />
+    <Import Project="..\PropellerEngine.props" />
+    <Import Project="..\Boost.props" />
+    <Import Project="..\ConfDebug.props" />
+    <Import Project="..\XXHash.props" />
+    <Import Project="..\stb.props" />
+    <Import Project="..\Bullet.props" />
+    <Import Project="..\Box2D.props" />
+    <Import Project="..\WinSock.props" />
+    <Import Project="..\DedicatedServer.props" />
+    <Import Project="..\LodePNG.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ServerDebug|Tegra-Android'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\BuildConfigurations.props" />
+    <Import Project="..\JsonCpp.props" />
+    <Import Project="..\PropellerEngine.props" />
+    <Import Project="..\Boost.props" />
+    <Import Project="..\ConfDebug.props" />
+    <Import Project="..\XXHash.props" />
+    <Import Project="..\stb.props" />
+    <Import Project="..\Bullet.props" />
+    <Import Project="..\Box2D.props" />
+    <Import Project="..\WinSock.props" />
+    <Import Project="..\DedicatedServer.props" />
+    <Import Project="..\LodePNG.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ServerDebug|Tegra-Android'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\BuildConfigurations.props" />
+    <Import Project="..\JsonCpp.props" />
+    <Import Project="..\PropellerEngine.props" />
+    <Import Project="..\Boost.props" />
+    <Import Project="..\ConfDebug.props" />
+    <Import Project="..\AndroidTegra.props" />
+    <Import Project="..\GLES2.props" />
+    <Import Project="..\LodePNG.props" />
+    <Import Project="..\XXHash.props" />
+    <Import Project="..\stb.props" />
+    <Import Project="..\Bullet.props" />
+    <Import Project="..\Box2D.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='EditorDebug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\BuildConfigurations.props" />
+    <Import Project="..\JsonCpp.props" />
+    <Import Project="..\PropellerEngine.props" />
+    <Import Project="..\Boost.props" />
+    <Import Project="..\D3D11.props" />
+    <Import Project="..\DirectXTK-debug.props" />
+    <Import Project="..\ConfDebug.props" />
+    <Import Project="..\Editor.props" />
+    <Import Project="..\XXHash.props" />
+    <Import Project="..\stb.props" />
+    <Import Project="..\Bullet.props" />
+    <Import Project="..\Box2D.props" />
+    <Import Project="..\WinSock.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='GameDebug|Emscripten'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\BuildConfigurations.props" />
+    <Import Project="..\JsonCpp.props" />
+    <Import Project="..\PropellerEngine.props" />
+    <Import Project="..\Boost.props" />
+    <Import Project="..\DirectXTK-debug.props" />
+    <Import Project="..\Emscripten.props" />
+    <Import Project="..\GLES2.props" />
+    <Import Project="..\LodePNG.props" />
+    <Import Project="..\ConfDebug.props" />
+    <Import Project="..\XXHash.props" />
+    <Import Project="..\stb.props" />
+    <Import Project="..\Box2D.props" />
+    <Import Project="..\Bullet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='GameDebugGL2|Emscripten'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\BuildConfigurations.props" />
+    <Import Project="..\JsonCpp.props" />
+    <Import Project="..\PropellerEngine.props" />
+    <Import Project="..\Boost.props" />
+    <Import Project="..\DirectXTK-debug.props" />
+    <Import Project="..\Emscripten.props" />
+    <Import Project="..\GLES2.props" />
+    <Import Project="..\LodePNG.props" />
+    <Import Project="..\ConfDebug.props" />
+    <Import Project="..\XXHash.props" />
+    <Import Project="..\stb.props" />
+    <Import Project="..\Box2D.props" />
+    <Import Project="..\Bullet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ServerDebug|Emscripten'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\BuildConfigurations.props" />
+    <Import Project="..\JsonCpp.props" />
+    <Import Project="..\PropellerEngine.props" />
+    <Import Project="..\Boost.props" />
+    <Import Project="..\DirectXTK-debug.props" />
+    <Import Project="..\Emscripten.props" />
+    <Import Project="..\GLES2.props" />
+    <Import Project="..\LodePNG.props" />
+    <Import Project="..\ConfDebug.props" />
+    <Import Project="..\XXHash.props" />
+    <Import Project="..\stb.props" />
+    <Import Project="..\Box2D.props" />
+    <Import Project="..\Bullet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='EditorDebug|Emscripten'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\BuildConfigurations.props" />
+    <Import Project="..\JsonCpp.props" />
+    <Import Project="..\PropellerEngine.props" />
+    <Import Project="..\Boost.props" />
+    <Import Project="..\DirectXTK-debug.props" />
+    <Import Project="..\Emscripten.props" />
+    <Import Project="..\GLES2.props" />
+    <Import Project="..\LodePNG.props" />
+    <Import Project="..\ConfDebug.props" />
+    <Import Project="..\Editor.props" />
+    <Import Project="..\XXHash.props" />
+    <Import Project="..\stb.props" />
+    <Import Project="..\Box2D.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='GameRelease|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\BuildConfigurations.props" />
+    <Import Project="..\JsonCpp.props" />
+    <Import Project="..\PropellerEngine.props" />
+    <Import Project="..\Boost.props" />
+    <Import Project="..\D3D11.props" />
+    <Import Project="..\DirectXTK.props" />
+    <Import Project="..\ConfRelease.props" />
+    <Import Project="..\XXHash.props" />
+    <Import Project="..\stb.props" />
+    <Import Project="..\Bullet.props" />
+    <Import Project="..\Box2D.props" />
+    <Import Project="..\WinSock.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='GameRelease|Tegra-Android'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\BuildConfigurations.props" />
+    <Import Project="..\JsonCpp.props" />
+    <Import Project="..\PropellerEngine.props" />
+    <Import Project="..\Boost.props" />
+    <Import Project="..\DirectXTK.props" />
+    <Import Project="..\ConfRelease.props" />
+    <Import Project="..\XXHash.props" />
+    <Import Project="..\stb.props" />
+    <Import Project="..\Bullet.props" />
+    <Import Project="..\Box2D.props" />
+    <Import Project="..\WinSock.props" />
+    <Import Project="..\AndroidTegra.props" />
+    <Import Project="..\GL2.props" />
+    <Import Project="..\LodePNG.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='GameRelease|Emscripten'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\BuildConfigurations.props" />
+    <Import Project="..\JsonCpp.props" />
+    <Import Project="..\PropellerEngine.props" />
+    <Import Project="..\Boost.props" />
+    <Import Project="..\DirectXTK.props" />
+    <Import Project="..\Emscripten.props" />
+    <Import Project="..\GLES2.props" />
+    <Import Project="..\LodePNG.props" />
+    <Import Project="..\ConfRelease.props" />
+    <Import Project="..\XXHash.props" />
+    <Import Project="..\stb.props" />
+    <Import Project="..\Box2D.props" />
+    <Import Project="..\Bullet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='GameDevelopment|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\BuildConfigurations.props" />
+    <Import Project="..\JsonCpp.props" />
+    <Import Project="..\PropellerEngine.props" />
+    <Import Project="..\Boost.props" />
+    <Import Project="..\D3D11.props" />
+    <Import Project="..\DirectXTK.props" />
+    <Import Project="..\ConfDevelopment.props" />
+    <Import Project="..\XXHash.props" />
+    <Import Project="..\stb.props" />
+    <Import Project="..\Bullet.props" />
+    <Import Project="..\Box2D.props" />
+    <Import Project="..\WinSock.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='GameDevelopment|Tegra-Android'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\BuildConfigurations.props" />
+    <Import Project="..\JsonCpp.props" />
+    <Import Project="..\PropellerEngine.props" />
+    <Import Project="..\Boost.props" />
+    <Import Project="..\DirectXTK.props" />
+    <Import Project="..\ConfDevelopment.props" />
+    <Import Project="..\XXHash.props" />
+    <Import Project="..\stb.props" />
+    <Import Project="..\Bullet.props" />
+    <Import Project="..\Box2D.props" />
+    <Import Project="..\WinSock.props" />
+    <Import Project="..\AndroidTegra.props" />
+    <Import Project="..\GL2.props" />
+    <Import Project="..\LodePNG.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='EditorDevelopment|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\BuildConfigurations.props" />
+    <Import Project="..\JsonCpp.props" />
+    <Import Project="..\PropellerEngine.props" />
+    <Import Project="..\Boost.props" />
+    <Import Project="..\D3D11.props" />
+    <Import Project="..\DirectXTK.props" />
+    <Import Project="..\ConfDevelopment.props" />
+    <Import Project="..\Editor.props" />
+    <Import Project="..\XXHash.props" />
+    <Import Project="..\stb.props" />
+    <Import Project="..\Bullet.props" />
+    <Import Project="..\Box2D.props" />
+    <Import Project="..\WinSock.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='GameDevelopment|Emscripten'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\BuildConfigurations.props" />
+    <Import Project="..\JsonCpp.props" />
+    <Import Project="..\PropellerEngine.props" />
+    <Import Project="..\Boost.props" />
+    <Import Project="..\DirectXTK.props" />
+    <Import Project="..\Emscripten.props" />
+    <Import Project="..\GLES2.props" />
+    <Import Project="..\LodePNG.props" />
+    <Import Project="..\ConfDevelopment.props" />
+    <Import Project="..\XXHash.props" />
+    <Import Project="..\stb.props" />
+    <Import Project="..\Box2D.props" />
+    <Import Project="..\Bullet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='EditorDevelopment|Emscripten'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\BuildConfigurations.props" />
+    <Import Project="..\JsonCpp.props" />
+    <Import Project="..\PropellerEngine.props" />
+    <Import Project="..\Boost.props" />
+    <Import Project="..\DirectXTK.props" />
+    <Import Project="..\Emscripten.props" />
+    <Import Project="..\GLES2.props" />
+    <Import Project="..\LodePNG.props" />
+    <Import Project="..\ConfDevelopment.props" />
+    <Import Project="..\Editor.props" />
+    <Import Project="..\XXHash.props" />
+    <Import Project="..\stb.props" />
+    <Import Project="..\Box2D.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GameDebug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GameDebug|Tegra-Android'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GameDebugGL2|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GameDebugGL2|Tegra-Android'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ServerDebug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ServerDebug|Tegra-Android'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ServerDebug|Tegra-Android'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='EditorDebug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GameDebug|Emscripten'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GameDebugGL2|Emscripten'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ServerDebug|Emscripten'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='EditorDebug|Emscripten'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GameRelease|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GameRelease|Tegra-Android'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GameRelease|Emscripten'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GameDevelopment|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GameDevelopment|Tegra-Android'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='EditorDevelopment|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GameDevelopment|Emscripten'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='EditorDevelopment|Emscripten'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\engine\audio\AudioSystem.cpp" />
+    <ClCompile Include="..\..\src\engine\audio\XAudio2\XAudio2Device.cpp" />
+    <ClCompile Include="..\..\src\engine\component\Component.cpp" />
+    <ClCompile Include="..\..\src\engine\component\ComponentHolder.cpp" />
+    <ClCompile Include="..\..\src\engine\console\Console.cpp" />
+    <ClCompile Include="..\..\src\engine\console\IngameConsoleSystem.cpp" />
+    <ClCompile Include="..\..\src\engine\console\IngameLogger.cpp" />
+    <ClCompile Include="..\..\src\engine\debug\DebugWin32.cpp" />
+    <ClCompile Include="..\..\src\engine\file\AndroidAssetManagerArchive.cpp" />
+    <ClCompile Include="..\..\src\engine\file\DirectoryArchive.cpp" />
+    <ClCompile Include="..\..\src\engine\file\FileManager.cpp" />
+    <ClCompile Include="..\..\src\engine\file\PackageArchive.cpp" />
+    <ClCompile Include="..\..\src\engine\GameInstance.cpp" />
+    <ClCompile Include="..\..\src\engine\input\AndroidInputSystem.cpp" />
+    <ClCompile Include="..\..\src\engine\input\InputSystem.cpp" />
+    <ClCompile Include="..\..\src\engine\input\KeyCodes.cpp" />
+    <ClCompile Include="..\..\src\engine\input\RawInputSystemWin32.cpp" />
+    <ClCompile Include="..\..\src\engine\input\XInputSystem.cpp" />
+    <ClCompile Include="..\..\src\engine\lang\Handle.cpp" />
+    <ClCompile Include="..\..\src\engine\lang\HandleManager.cpp" />
+    <ClCompile Include="..\..\src\engine\math\Random.cpp" />
+    <ClCompile Include="..\..\src\engine\memory\BlockPoolAllocator.cpp" />
+    <ClCompile Include="..\..\src\engine\network\ClientSystem.cpp" />
+    <ClCompile Include="..\..\src\engine\network\ServerSystem.cpp" />
+    <ClCompile Include="..\..\src\engine\physics\Box2DCharacterComponent.cpp" />
+    <ClCompile Include="..\..\src\engine\physics\Box2DPhysicSystem.cpp" />
+    <ClCompile Include="..\..\src\engine\physics\Box2DRigidBodyComponent.cpp" />
+    <ClCompile Include="..\..\src\engine\physics\BoxContactListener.cpp" />
+    <ClCompile Include="..\..\src\engine\physics\BulletDebugDraw.cpp" />
+    <ClCompile Include="..\..\src\engine\physics\PhysicSystem.cpp" />
+    <ClCompile Include="..\..\src\engine\physics\RigidBodyComponent.cpp" />
+    <ClCompile Include="..\..\src\engine\PlatformInitializationEmpty.cpp" />
+    <ClCompile Include="..\..\src\engine\precompiled.cpp" />
+    <ClCompile Include="..\..\src\engine\profiler\ProfilerManager.cpp" />
+    <ClCompile Include="..\..\src\engine\renderer\CameraSystem.cpp" />
+    <ClCompile Include="..\..\src\engine\renderer\D3D11\D3D11RendererDevice.cpp" />
+    <ClCompile Include="..\..\src\engine\renderer\D3D11\D3D11ShaderLoader.cpp" />
+    <ClCompile Include="..\..\src\engine\renderer\D3D11\D3D11Texture.h" />
+    <ClCompile Include="..\..\src\engine\renderer\D3D11\D3D11TextureLoader.cpp" />
+    <ClCompile Include="..\..\src\engine\renderer\GL2\GL2RendererDevice.cpp" />
+    <ClCompile Include="..\..\src\engine\renderer\GL2\GL2ShaderLoader.cpp" />
+    <ClCompile Include="..\..\src\engine\renderer\GL2\GL2TextureLoader.cpp" />
+    <ClCompile Include="..\..\src\engine\renderer\LightComponent.cpp" />
+    <ClCompile Include="..\..\src\engine\renderer\MeshComponent.cpp" />
+    <ClCompile Include="..\..\src\engine\renderer\ModelResource.cpp" />
+    <ClCompile Include="..\..\src\engine\renderer\nullrenderer\NullRendererTextureLoader.cpp" />
+    <ClCompile Include="..\..\src\engine\renderer\PropellerModelLoader.cpp" />
+    <ClCompile Include="..\..\src\engine\renderer\RendererSystem.cpp" />
+    <ClCompile Include="..\..\src\engine\renderer\SpriteComponent.cpp" />
+    <ClCompile Include="..\..\src\engine\renderer\TextureResource.cpp" />
+    <ClCompile Include="..\..\src\engine\resource\ResourceManager.cpp" />
+    <ClCompile Include="..\..\src\engine\rtti\Class.cpp" />
+    <ClCompile Include="..\..\src\engine\rtti\Object.cpp" />
+    <ClCompile Include="..\..\src\engine\rtti\RTTI.cpp" />
+    <ClCompile Include="..\..\src\engine\scene\CameraComponent.cpp" />
+    <ClCompile Include="..\..\src\engine\scene\Entity.cpp" />
+    <ClCompile Include="..\..\src\engine\scene\EntityType.cpp" />
+    <ClCompile Include="..\..\src\engine\scene\EntityTypeManager.cpp" />
+    <ClCompile Include="..\..\src\engine\scene\Scene.cpp" />
+    <ClCompile Include="..\..\src\engine\scene\SceneManager.cpp" />
+    <ClCompile Include="..\..\src\engine\scene\scenetypes\EditorSceneType.cpp" />
+    <ClCompile Include="..\..\src\engine\scene\TransformComponent.cpp" />
+    <ClCompile Include="..\..\src\engine\stream\Serializable.cpp" />
+    <ClCompile Include="..\..\src\engine\SystemBase.cpp" />
+    <ClCompile Include="..\..\src\engine\SystemManager.cpp" />
+    <ClCompile Include="..\..\src\engine\sys\AtomicUnix.cpp" />
+    <ClCompile Include="..\..\src\engine\sys\AtomicWin32.cpp" />
+    <ClCompile Include="..\..\src\engine\sys\DateTime.cpp" />
+    <ClCompile Include="..\..\src\engine\sys\FileSystemUnix.cpp" />
+    <ClCompile Include="..\..\src\engine\sys\FileSystemWin32.cpp" />
+    <ClCompile Include="..\..\src\engine\sys\GameWindowWin32.cpp" />
+    <ClCompile Include="..\..\src\engine\sys\Logger.cpp" />
+    <ClCompile Include="..\..\src\engine\sys\MemoryMappedFileAndroid.cpp" />
+    <ClCompile Include="..\..\src\engine\sys\MemoryMappedFileUnix.cpp" />
+    <ClCompile Include="..\..\src\engine\sys\MemoryMappedFileWin32.cpp" />
+    <ClCompile Include="..\..\src\engine\sys\MutexUnix.cpp" />
+    <ClCompile Include="..\..\src\engine\sys\MutexWin32.cpp" />
+    <ClCompile Include="..\..\src\engine\sys\Scheduler.cpp" />
+    <ClCompile Include="..\..\src\engine\sys\SleepUnix.cpp" />
+    <ClCompile Include="..\..\src\engine\sys\SleepWin32.cpp" />
+    <ClCompile Include="..\..\src\engine\sys\SocketUnix.cpp" />
+    <ClCompile Include="..\..\src\engine\sys\SocketWin32.cpp" />
+    <ClCompile Include="..\..\src\engine\sys\ThreadUnix.cpp" />
+    <ClCompile Include="..\..\src\engine\sys\ThreadWin32.cpp" />
+    <ClCompile Include="..\..\src\engine\sys\TimerUnix.cpp" />
+    <ClCompile Include="..\..\src\engine\sys\TimerWin32.cpp" />
+    <ClCompile Include="..\..\src\engine\util\StringUtil.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\engine\audio\AudioDevice.h" />
+    <ClInclude Include="..\..\src\engine\audio\AudioDeviceBase.h" />
+    <ClInclude Include="..\..\src\engine\audio\AudioSystem.h" />
+    <ClInclude Include="..\..\src\engine\audio\AudioType.h" />
+    <ClInclude Include="..\..\src\engine\audio\XAudio2\XAudio2Device.h" />
+    <ClInclude Include="..\..\src\engine\component\Component.h" />
+    <ClInclude Include="..\..\src\engine\component\ComponentHolder.h" />
+    <ClInclude Include="..\..\src\engine\component\Dependencies.h" />
+    <ClInclude Include="..\..\src\engine\console\Command.h" />
+    <ClInclude Include="..\..\src\engine\console\Console.h" />
+    <ClInclude Include="..\..\src\engine\console\Cvar.h" />
+    <ClInclude Include="..\..\src\engine\console\IngameConsoleSystem.h" />
+    <ClInclude Include="..\..\src\engine\console\IngameLogger.h" />
+    <ClInclude Include="..\..\src\engine\Context.h" />
+    <ClInclude Include="..\..\src\engine\debug\Debug.h" />
+    <ClInclude Include="..\..\src\engine\debug\Tombstone.h" />
+    <ClInclude Include="..\..\src\engine\file\AndroidAssetManagerArchive.h" />
+    <ClInclude Include="..\..\src\engine\file\Archive.h" />
+    <ClInclude Include="..\..\src\engine\file\DirectoryArchive.h" />
+    <ClInclude Include="..\..\src\engine\file\FileData.h" />
+    <ClInclude Include="..\..\src\engine\file\FileList.h" />
+    <ClInclude Include="..\..\src\engine\file\FileManager.h" />
+    <ClInclude Include="..\..\src\engine\file\PackageArchive.h" />
+    <ClInclude Include="..\..\src\engine\file\PropellerPackageVersion.h" />
+    <ClInclude Include="..\..\src\engine\GameInstance.h" />
+    <ClInclude Include="..\..\src\engine\GameMode.h" />
+    <ClInclude Include="..\..\src\engine\input\AndroidInputSystem.h" />
+    <ClInclude Include="..\..\src\engine\input\InputSystem.h" />
+    <ClInclude Include="..\..\src\engine\input\KeyCodes.h" />
+    <ClInclude Include="..\..\src\engine\input\RawInputSystem.h" />
+    <ClInclude Include="..\..\src\engine\input\XInputSystem.h" />
+    <ClInclude Include="..\..\src\engine\lang\Handle.h" />
+    <ClInclude Include="..\..\src\engine\lang\HandleManager.h" />
+    <ClInclude Include="..\..\src\engine\lang\RCCPP.h" />
+    <ClInclude Include="..\..\src\engine\lang\ReferenceCountable.h" />
+    <ClInclude Include="..\..\src\engine\lang\ReferenceCountedPointer.h" />
+    <ClInclude Include="..\..\src\engine\lang\ScopedPtr.h" />
+    <ClInclude Include="..\..\src\engine\math\Constants.h" />
+    <ClInclude Include="..\..\src\engine\math\Matrix.h" />
+    <ClInclude Include="..\..\src\engine\math\Quaternion.h" />
+    <ClInclude Include="..\..\src\engine\math\Random.h" />
+    <ClInclude Include="..\..\src\engine\math\Vector.h" />
+    <ClInclude Include="..\..\src\engine\math\VectorConversions.h" />
+    <ClInclude Include="..\..\src\engine\memory\BlockPoolAllocator.h" />
+    <ClInclude Include="..\..\src\engine\memory\RingBuffer.h" />
+    <ClInclude Include="..\..\src\engine\memory\StackAllocator.h" />
+    <ClInclude Include="..\..\src\engine\network\ClientSystem.h" />
+    <ClInclude Include="..\..\src\engine\network\ServerSystem.h" />
+    <ClInclude Include="..\..\src\engine\network\SharedEnums.h" />
+    <ClInclude Include="..\..\src\engine\physics\Box2DCharacterComponent.h" />
+    <ClInclude Include="..\..\src\engine\physics\Box2DPhysicSystem.h" />
+    <ClInclude Include="..\..\src\engine\physics\Box2DRigidBodyComponent.h" />
+    <ClInclude Include="..\..\src\engine\physics\BoxContactListener.h" />
+    <ClInclude Include="..\..\src\engine\physics\BulletDebugDraw.h" />
+    <ClInclude Include="..\..\src\engine\physics\PhysicSystem.h" />
+    <ClInclude Include="..\..\src\engine\physics\RigidBodyComponent.h" />
+    <ClInclude Include="..\..\src\engine\PlatformInitialization.h" />
+    <ClInclude Include="..\..\src\engine\precompiled.h" />
+    <ClInclude Include="..\..\src\engine\preprocessor\forwardDeclare.h" />
+    <ClInclude Include="..\..\src\engine\preprocessor\macros.h" />
+    <ClInclude Include="..\..\src\engine\preprocessor\platform.h" />
+    <ClInclude Include="..\..\src\engine\preprocessor\shared.h" />
+    <ClInclude Include="..\..\src\engine\preprocessor\version.h" />
+    <ClInclude Include="..\..\src\engine\profiler\AutoProfiler.h" />
+    <ClInclude Include="..\..\src\engine\profiler\ProfilerManager.h" />
+    <ClInclude Include="..\..\src\engine\properties\Properties.h" />
+    <ClInclude Include="..\..\src\engine\renderer\Buffer.h" />
+    <ClInclude Include="..\..\src\engine\renderer\CameraSystem.h" />
+    <ClInclude Include="..\..\src\engine\renderer\D3D11\D3D11Buffer.h" />
+    <ClInclude Include="..\..\src\engine\renderer\D3D11\D3D11DeviceData.h" />
+    <ClInclude Include="..\..\src\engine\renderer\D3D11\D3D11InputLayout.h" />
+    <ClInclude Include="..\..\src\engine\renderer\D3D11\D3D11Pipeline.h" />
+    <ClInclude Include="..\..\src\engine\renderer\D3D11\D3D11RenderTarget.h" />
+    <ClInclude Include="..\..\src\engine\renderer\D3D11\D3D11Shader.h" />
+    <ClInclude Include="..\..\src\engine\renderer\DrawDescriptor.h" />
+    <ClInclude Include="..\..\src\engine\renderer\GL2\GL2Buffer.h" />
+    <ClInclude Include="..\..\src\engine\renderer\GL2\GL2DeviceData.h" />
+    <ClInclude Include="..\..\src\engine\renderer\GL2\GL2Helper.h" />
+    <ClInclude Include="..\..\src\engine\renderer\GL2\GL2InputLayout.h" />
+    <ClInclude Include="..\..\src\engine\renderer\GL2\GL2Pipeline.h" />
+    <ClInclude Include="..\..\src\engine\renderer\GL2\GL2Shader.h" />
+    <ClInclude Include="..\..\src\engine\renderer\GL2\GL2Texture.h" />
+    <ClInclude Include="..\..\src\engine\renderer\InputLayout.h" />
+    <ClInclude Include="..\..\src\engine\renderer\LightComponent.h" />
+    <ClInclude Include="..\..\src\engine\renderer\MeshComponent.h" />
+    <ClInclude Include="..\..\src\engine\renderer\ModelResource.h" />
+    <ClInclude Include="..\..\src\engine\renderer\Pipeline.h" />
+    <ClInclude Include="..\..\src\engine\renderer\PropellerModelLoader.h" />
+    <ClInclude Include="..\..\src\engine\renderer\PropellerModelVersionIdentifier.h" />
+    <ClInclude Include="..\..\src\engine\renderer\RendererBackend.h" />
+    <ClInclude Include="..\..\src\engine\renderer\RendererDevice.h" />
+    <ClInclude Include="..\..\src\engine\renderer\RendererEnums.h" />
+    <ClInclude Include="..\..\src\engine\renderer\RendererSystem.h" />
+    <ClInclude Include="..\..\src\engine\renderer\RenderTarget.h" />
+    <ClInclude Include="..\..\src\engine\renderer\Shader.h" />
+    <ClInclude Include="..\..\src\engine\renderer\ShaderLoader.h" />
+    <ClInclude Include="..\..\src\engine\renderer\ShaderResource.h" />
+    <ClInclude Include="..\..\src\engine\renderer\SpriteComponent.h" />
+    <ClInclude Include="..\..\src\engine\renderer\SpriteLayerDefinition.h" />
+    <ClInclude Include="..\..\src\engine\renderer\StateDescriptor.h" />
+    <ClInclude Include="..\..\src\engine\renderer\Texture.h" />
+    <ClInclude Include="..\..\src\engine\renderer\TextureLoader.h" />
+    <ClInclude Include="..\..\src\engine\renderer\TextureResource.h" />
+    <ClInclude Include="..\..\src\engine\renderer\Viewport.h" />
+    <ClInclude Include="..\..\src\engine\resource\Resource.h" />
+    <ClInclude Include="..\..\src\engine\resource\ResourceLoader.h" />
+    <ClInclude Include="..\..\src\engine\resource\ResourceManager.h" />
+    <ClInclude Include="..\..\src\engine\rtti\Class.h" />
+    <ClInclude Include="..\..\src\engine\rtti\Object.h" />
+    <ClInclude Include="..\..\src\engine\rtti\RTTI.h" />
+    <ClInclude Include="..\..\src\engine\scene\CameraComponent.h" />
+    <ClInclude Include="..\..\src\engine\scene\ComponentType.h" />
+    <ClInclude Include="..\..\src\engine\scene\Entity.h" />
+    <ClInclude Include="..\..\src\engine\scene\EntityType.h" />
+    <ClInclude Include="..\..\src\engine\scene\EntityTypeManager.h" />
+    <ClInclude Include="..\..\src\engine\scene\Scene.h" />
+    <ClInclude Include="..\..\src\engine\scene\SceneManager.h" />
+    <ClInclude Include="..\..\src\engine\scene\scenetypes\AbstractSceneType.h" />
+    <ClInclude Include="..\..\src\engine\scene\scenetypes\EditorSceneType.h" />
+    <ClInclude Include="..\..\src\engine\scene\scenetypes\ProgrammableSceneType.h" />
+    <ClInclude Include="..\..\src\engine\scene\TransformComponent.h" />
+    <ClInclude Include="..\..\src\engine\stream\BufferedOutputStream.h" />
+    <ClInclude Include="..\..\src\engine\stream\CallWithStream.h" />
+    <ClInclude Include="..\..\src\engine\stream\CSharpBufferedOutputStream.h" />
+    <ClInclude Include="..\..\src\engine\stream\CSharpInputStream.h" />
+    <ClInclude Include="..\..\src\engine\stream\Endian.h" />
+    <ClInclude Include="..\..\src\engine\stream\InputStream.h" />
+    <ClInclude Include="..\..\src\engine\stream\OutputStream.h" />
+    <ClInclude Include="..\..\src\engine\stream\Serializable.h" />
+    <ClInclude Include="..\..\src\engine\SystemBase.h" />
+    <ClInclude Include="..\..\src\engine\SystemManager.h" />
+    <ClInclude Include="..\..\src\engine\sys\Atomic.h" />
+    <ClInclude Include="..\..\src\engine\sys\DateTime.h" />
+    <ClInclude Include="..\..\src\engine\sys\FileSystem.h" />
+    <ClInclude Include="..\..\src\engine\sys\GameWindow.h" />
+    <ClInclude Include="..\..\src\engine\sys\Logger.h" />
+    <ClInclude Include="..\..\src\engine\sys\MemoryMappedFile.h" />
+    <ClInclude Include="..\..\src\engine\sys\Mutex.h" />
+    <ClInclude Include="..\..\src\engine\sys\Scheduler.h" />
+    <ClInclude Include="..\..\src\engine\sys\Sleep.h" />
+    <ClInclude Include="..\..\src\engine\sys\Socket.h" />
+    <ClInclude Include="..\..\src\engine\sys\Thread.h" />
+    <ClInclude Include="..\..\src\engine\sys\Timer.h" />
+    <ClInclude Include="..\..\src\engine\util\Array.h" />
+    <ClInclude Include="..\..\src\engine\util\Bind.h" />
+    <ClInclude Include="..\..\src\engine\util\HashMap.h" />
+    <ClInclude Include="..\..\src\engine\util\Queue.h" />
+    <ClInclude Include="..\..\src\engine\util\Stack.h" />
+    <ClInclude Include="..\..\src\engine\util\StringUtil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\bin\autoexec.cfg" />
+    <None Include="..\..\bin\editor.cfg" />
+    <None Include="..\..\bin\keys.cfg" />
+    <None Include="..\..\doc\PropellerGuide.md" />
+    <None Include="..\..\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\changelog.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

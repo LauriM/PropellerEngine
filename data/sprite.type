@@ -1,0 +1,11 @@
+[
+   [
+      [ "TransformComponent", null ],
+      [
+         "SpriteComponent",
+         [
+            [ "Texture", 5, "palikka.png" ]
+         ]
+      ]
+   ]
+]

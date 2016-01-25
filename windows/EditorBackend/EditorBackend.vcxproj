@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="EditorDebug|Win32">
+      <Configuration>EditorDebug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="EditorDevelopment|Win32">
+      <Configuration>EditorDevelopment</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GameDebugGL2|Win32">
+      <Configuration>GameDebugGL2</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ServerDebug|Win32">
+      <Configuration>ServerDebug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{19319964-F233-4C47-9ECD-C499E584CE7F}</ProjectGuid>
+    <RootNamespace>EditorBackend</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='EditorDebug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='EditorDevelopment|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GameDebugGL2|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ServerDebug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='EditorDebug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\BuildConfigurations.props" />
+    <Import Project="..\Boost.props" />
+    <Import Project="..\XInput.props" />
+    <Import Project="..\D3D11.props" />
+    <Import Project="..\JsonCpp.props" />
+    <Import Project="..\PropellerEngine.props" />
+    <Import Project="..\Editor.props" />
+    <Import Project="..\ConfDebug.props" />
+    <Import Project="..\EditorBackend.props" />
+    <Import Project="..\DirectXTK-debug.props" />
+    <Import Project="..\XXHash.props" />
+    <Import Project="..\Box2D.props" />
+    <Import Project="..\Bullet.props" />
+    <Import Project="..\WinSock.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='EditorDevelopment|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\BuildConfigurations.props" />
+    <Import Project="..\Boost.props" />
+    <Import Project="..\XInput.props" />
+    <Import Project="..\D3D11.props" />
+    <Import Project="..\JsonCpp.props" />
+    <Import Project="..\PropellerEngine.props" />
+    <Import Project="..\Editor.props" />
+    <Import Project="..\ConfDevelopment.props" />
+    <Import Project="..\EditorBackend.props" />
+    <Import Project="..\DirectXTK.props" />
+    <Import Project="..\XXHash.props" />
+    <Import Project="..\Box2D.props" />
+    <Import Project="..\Bullet.props" />
+    <Import Project="..\WinSock.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='GameDebugGL2|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\BuildConfigurations.props" />
+    <Import Project="..\Boost.props" />
+    <Import Project="..\XInput.props" />
+    <Import Project="..\D3D11.props" />
+    <Import Project="..\JsonCpp.props" />
+    <Import Project="..\PropellerEngine.props" />
+    <Import Project="..\Editor.props" />
+    <Import Project="..\ConfDevelopment.props" />
+    <Import Project="..\EditorBackend.props" />
+    <Import Project="..\DirectXTK.props" />
+    <Import Project="..\XXHash.props" />
+    <Import Project="..\Box2D.props" />
+    <Import Project="..\Bullet.props" />
+    <Import Project="..\WinSock.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ServerDebug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\BuildConfigurations.props" />
+    <Import Project="..\Boost.props" />
+    <Import Project="..\XInput.props" />
+    <Import Project="..\D3D11.props" />
+    <Import Project="..\JsonCpp.props" />
+    <Import Project="..\PropellerEngine.props" />
+    <Import Project="..\Editor.props" />
+    <Import Project="..\ConfDevelopment.props" />
+    <Import Project="..\EditorBackend.props" />
+    <Import Project="..\DirectXTK.props" />
+    <Import Project="..\XXHash.props" />
+    <Import Project="..\Box2D.props" />
+    <Import Project="..\Bullet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='EditorDebug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='EditorDevelopment|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GameDebugGL2|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ServerDebug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\editorbackend\ArchiveCreator.h" />
+    <ClInclude Include="..\..\src\editorbackend\CSharp\CSharpInstance.h" />
+    <ClInclude Include="..\..\src\editorbackend\CSharp\CSharpInstanceManager.h" />
+    <ClInclude Include="..\..\src\editorbackend\CSharp\CSharpInstanceType.h" />
+    <ClInclude Include="..\..\src\editorbackend\CSharp\StreamInstructionTypes.h" />
+    <ClInclude Include="..\..\src\editorbackend\editoroperations\addEmptyEntityOperation.h" />
+    <ClInclude Include="..\..\src\editorbackend\editoroperations\addRemoveComponentOnTypeOperation.h" />
+    <ClInclude Include="..\..\src\editorbackend\editoroperations\addRemoveComponentOperation.h" />
+    <ClInclude Include="..\..\src\editorbackend\editoroperations\addRemoveEntityOperation.h" />
+    <ClInclude Include="..\..\src\editorbackend\editoroperations\renameEntityOperation.h" />
+    <ClInclude Include="..\..\src\editorbackend\EditorVisualizationSystem.h" />
+    <ClInclude Include="..\..\src\editorbackend\entityeditor\EntityEditor.h" />
+    <ClInclude Include="..\..\src\editorbackend\entityeditor\EntityEditTargetType.h" />
+    <ClInclude Include="..\..\src\editorbackend\EntityEditView.h" />
+    <ClInclude Include="..\..\src\editorbackend\GameEditor.h" />
+    <ClInclude Include="..\..\src\editorbackend\GameView.h" />
+    <ClInclude Include="..\..\src\editorbackend\modelimporter\AbstractModelImporter.h" />
+    <ClInclude Include="..\..\src\editorbackend\modelimporter\importers\WaveformObjImporter.h" />
+    <ClInclude Include="..\..\src\editorbackend\modelimporter\ModelImporterInstance.h" />
+    <ClInclude Include="..\..\src\editorbackend\modelviewer\ModelViewer.h" />
+    <ClInclude Include="..\..\src\editorbackend\Operation.h" />
+    <ClInclude Include="..\..\src\editorbackend\OperationManager.h" />
+    <ClInclude Include="..\..\src\editorbackend\particleeditor\ParticleEditor.h" />
+    <ClInclude Include="..\..\src\editorbackend\precompiled.h" />
+    <ClInclude Include="..\..\src\editorbackend\statsview\StatsView.h" />
+    <ClInclude Include="..\..\src\editorbackend\systemlistview\SystemListView.h" />
+    <ClInclude Include="..\..\src\editorbackend\sys\EditorLogger.h" />
+    <ClInclude Include="..\..\src\editorbackend\tiledimport\TiledImporter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\editorbackend\ArchiveCreator.cpp" />
+    <ClCompile Include="..\..\src\editorbackend\CSharp\CSharpInstance.cpp" />
+    <ClCompile Include="..\..\src\editorbackend\CSharp\CSharpInstanceManager.cpp" />
+    <ClCompile Include="..\..\src\editorbackend\dll.cpp" />
+    <ClCompile Include="..\..\src\editorbackend\editoroperations\addEmptyEntityOperation.cpp" />
+    <ClCompile Include="..\..\src\editorbackend\editoroperations\addRemoveComponentOnTypeOperation.cpp" />
+    <ClCompile Include="..\..\src\editorbackend\editoroperations\addRemoveComponentOperation.cpp" />
+    <ClCompile Include="..\..\src\editorbackend\editoroperations\addRemoveEntityOperation.cpp" />
+    <ClCompile Include="..\..\src\editorbackend\editoroperations\renameEntityOperation.cpp" />
+    <ClCompile Include="..\..\src\editorbackend\EditorVisualizationSystem.cpp" />
+    <ClCompile Include="..\..\src\editorbackend\entityeditor\EntityEditor.cpp" />
+    <ClCompile Include="..\..\src\editorbackend\entityeditor\EntityEditView.cpp" />
+    <ClCompile Include="..\..\src\editorbackend\GameEditor.cpp" />
+    <ClCompile Include="..\..\src\editorbackend\GameView.cpp" />
+    <ClCompile Include="..\..\src\editorbackend\modelimporter\importers\WaveformObjImporter.cpp" />
+    <ClCompile Include="..\..\src\editorbackend\modelimporter\ModelImporterInstance.cpp" />
+    <ClCompile Include="..\..\src\editorbackend\modelviewer\ModelViewer.cpp" />
+    <ClCompile Include="..\..\src\editorbackend\OperationManager.cpp" />
+    <ClCompile Include="..\..\src\editorbackend\particleeditor\ParticleEditor.cpp" />
+    <ClCompile Include="..\..\src\editorbackend\precompiled.cpp" />
+    <ClCompile Include="..\..\src\editorbackend\statsview\StatsView.cpp" />
+    <ClCompile Include="..\..\src\editorbackend\systemlistview\SystemListView.cpp" />
+    <ClCompile Include="..\..\src\editorbackend\sys\EditorLogger.cpp" />
+    <ClCompile Include="..\..\src\editorbackend\tiledimport\TiledImporter.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

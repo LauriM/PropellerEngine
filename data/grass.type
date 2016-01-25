@@ -1,0 +1,16 @@
+[
+   [
+      [ "TransformComponent", null ],
+      [
+         "SpriteComponent",
+         [
+            [ "Texture", 5, "grass.png" ]
+         ]
+      ],
+      [ "Box2DRigidBodyComponent", 
+		[
+		[ "Kinematic", 2, "true" ]
+		]
+	  ]
+   ]
+]
