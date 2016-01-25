@@ -2,7 +2,9 @@
 
 ![Screenshot](http://laurimakinen.net/img/propeller1.png)
 
-This is the opensource/public version of the PropellerEngine. To understand more about the history of this project, I recommend to read the postmortem about it. The engine is result of almost 2 years of part-time development from one programmer.
+This is the opensource/public version of the PropellerEngine. To understand more about the history of this project. The engine is result of almost 2 years of part-time development from one programmer.
+
+**For more information about the engine, I recommend you to read the ![postmortem](http://devblog.laurimakinen.net/2016/01/propellerengine-postmortem/).**
 
 Main features that have been working
 
