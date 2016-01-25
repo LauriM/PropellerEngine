@@ -1,5 +1,7 @@
 ![Propeller](http://i.imgur.com/CyEu5EB.png)
 
+![Screenshot](http://laurimakinen.net/img/propeller1.png)
+
 This is the opensource/public version of the PropellerEngine. To understand more about the history of this project, I recommend to read the postmortem about it. The engine is result of almost 2 years of part-time development from one programmer.
 
 Main features that have been working
