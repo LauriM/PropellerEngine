@@ -38,7 +38,7 @@ Thirdparty libraries used:
 * Boost 1.55
 * Box2D
 * Bullet
-* catch.has
+* catch.h
 * DirectXTK
 * glew
 * JsonCpp
