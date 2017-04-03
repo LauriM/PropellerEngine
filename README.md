@@ -4,8 +4,6 @@
 
 This is the opensource/public version of the PropellerEngine, it is result of almost 2 years of part-time development from one programmer.
 
-**For more information about the engine, I recommend you to read the [postmortem](http://devblog.laurimakinen.net/2016/01/propellerengine-postmortem/).**
-
 Main features that have been working
 
 * Integrated editor written in C#
